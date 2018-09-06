@@ -1,13 +1,9 @@
 package com.example.learn.testme;
 
-import android.Manifest;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeactivity = new Intent(MainActivity.this, HomeActivity.class);
+                Intent homeactivity = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(homeactivity);
                 finish();
             }
