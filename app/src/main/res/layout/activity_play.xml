@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+     android:layout_height="match_parent"
+
+    tools:context=".Play">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+              android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:gravity="right"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:text="TIME :: " />
+
+            <Chronometer
+                android:id="@+id/simpleChronometer"
+                android:layout_width="100dp"
+                android:textSize="25dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="1/10"
+                android:id="@+id/set_count"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_Question"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Question" />
+
+        <Button
+            android:id="@+id/btn_answerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_button"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btn_answerB"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_button"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/btn_answerC"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_button"
+            android:text="C" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_answerD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_button"
+            android:text="D" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_answerE"
+            android:layout_width="match_parent"
+            android:background="@drawable/bubble_button"
+            android:layout_height="wrap_content"
+            android:text="E" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

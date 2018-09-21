@@ -18,10 +18,13 @@
         </activity>
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpStudent" />
-        <activity android:name=".Home"></activity>
-
-
-
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Start"
+            android:label="@string/title_activity_start"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Play" />
+        <activity android:name=".Done"></activity>
     </application>
 
 </manifest>

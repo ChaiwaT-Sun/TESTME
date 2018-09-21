@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Done">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player_name"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Name" />
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/player_subjecte"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Subjecte" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/player_time"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Time" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:id="@+id/player_passed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Paassed" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_back_home"
+            android:background="@drawable/bubble_button"
+            android:layout_width="100dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="OK" />
+    </LinearLayout>
+
+</RelativeLayout>

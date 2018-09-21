@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TESTME</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_start">Start</string>
+
 </resources>

@@ -1,21 +1,34 @@
 package com.example.learn.testme.Model;
 
-public class Qusetion {
+public class Question {
 
-    private String Qusetion;
+    private String Question;
     private String AnswerA;
     private String AnswerB;
     private String AnswerC;
     private String AnswerD;
-    private String AnswerF;
+    private String AnswerE;
     private String CorrectAnswer;
+    private String IsImageQuestion;
 
-    public String getQusetion() {
-        return Qusetion;
+    public String getIsImageQuestion() {
+        return IsImageQuestion;
     }
 
-    public void setQusetion(String qusetion) {
-        Qusetion = qusetion;
+    public void setIsImageQuestion(String isImageQuestion) {
+        IsImageQuestion = isImageQuestion;
+    }
+
+    public Question(String isImageQuestion) {
+        IsImageQuestion = isImageQuestion;
+    }
+
+    public String getQuestion() {
+        return Question;
+    }
+
+    public void setQuestion(String Question) {
+        Question = Question;
     }
 
     public String getAnswerA() {
@@ -50,12 +63,12 @@ public class Qusetion {
         AnswerD = answerD;
     }
 
-    public String getAnswerF() {
-        return AnswerF;
+    public String getAnswerE() {
+        return AnswerE;
     }
 
-    public void setAnswerF(String answerF) {
-        AnswerF = answerF;
+    public void setAnswerE(String AnswerE) {
+        AnswerE = AnswerE;
     }
 
     public String getCorrectAnswer() {
@@ -74,30 +87,30 @@ public class Qusetion {
         CategoryId = categoryId;
     }
 
-    public String getIsQusetion() {
-        return IsQusetion;
+    public String getIsQuestion() {
+        return IsQuestion;
     }
 
-    public void setIsQusetion(String isQusetion) {
-        IsQusetion = isQusetion;
+    public void setIsQuestion(String isQuestion) {
+        IsQuestion = isQuestion;
     }
 
     private String CategoryId;
-    private String IsQusetion;
+    private String IsQuestion;
 
-    public Qusetion(String qusetion, String answerA, String answerB, String answerC, String answerD, String answerF, String correctAnswer, String categoryId, String isQusetion) {
-        Qusetion = qusetion;
+    public Question(String Question, String answerA, String answerB, String answerC, String answerD, String AnswerE, String correctAnswer, String categoryId, String isQuestion) {
+        Question = Question;
         AnswerA = answerA;
         AnswerB = answerB;
         AnswerC = answerC;
         AnswerD = answerD;
-        AnswerF = answerF;
+        AnswerE = AnswerE;
         CorrectAnswer = correctAnswer;
         CategoryId = categoryId;
-        IsQusetion = isQusetion;
+        IsQuestion = isQuestion;
     }
 
-    public Qusetion(){
+    public Question(){
 
     }
 

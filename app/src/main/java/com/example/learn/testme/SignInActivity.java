@@ -44,6 +44,10 @@ public class SignInActivity extends AppCompatActivity {
       Etxt_idstudent =(EditText)findViewById(R.id.Etxt_idStudent);
       Etxt_password = (EditText)findViewById(R.id.Etxt_password);
 
+      //for test application
+      Etxt_idstudent.setText("123456789");
+      Etxt_password.setText("12345");
+
       //action button
       btn_sign_up.setOnClickListener(new View.OnClickListener() {
           @Override
