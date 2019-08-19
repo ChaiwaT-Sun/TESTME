@@ -45,8 +45,9 @@ public class SignInActivity extends AppCompatActivity {
       Etxt_password = (EditText)findViewById(R.id.Etxt_password);
 
       //for test application
-      Etxt_idstudent.setText("123456789");
-      Etxt_password.setText("12345");
+//      Etxt_idstudent.setText("123456789");
+//      Etxt_password.setText("12345");
+
 
       //action button
       btn_sign_up.setOnClickListener(new View.OnClickListener() {
@@ -64,17 +65,13 @@ public class SignInActivity extends AppCompatActivity {
               SignIn(Etxt_idstudent.getText().toString(),Etxt_password.getText().toString());
           }
       });
-
     }
-
-
-    // Sign in action to firebase
+    //Sign in to firebase
     private void SignIn(final String IdStudent , final String password){
 
         users.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
                 if(dataSnapshot.child(IdStudent).exists()){
                     if(!IdStudent.isEmpty())
                     {

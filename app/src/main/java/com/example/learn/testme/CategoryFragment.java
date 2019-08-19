@@ -1,7 +1,5 @@
 package com.example.learn.testme;
 
-
-
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -44,6 +42,7 @@ public class CategoryFragment extends Fragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         database = FirebaseDatabase.getInstance();
         categories = database.getReference("Category");

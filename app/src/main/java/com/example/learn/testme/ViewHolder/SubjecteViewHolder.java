@@ -6,7 +6,6 @@ import android.widget.TextView;
 
 import com.example.learn.testme.Interface.ItemClickLIstener;
 import com.example.learn.testme.R;
-import com.example.learn.testme.Subject;
 
 public class SubjecteViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 

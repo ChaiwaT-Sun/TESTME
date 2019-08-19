@@ -2,13 +2,10 @@
 package com.example.learn.testme;
 
 import android.content.Intent;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.view.LayoutInflaterCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -67,13 +64,16 @@ public class SignUpStudent extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(Etxt_new_idstudent.getText().toString().equals("") && Etxt_new_username.getText().toString().equals("") && Etxt_new_password.getText().toString().equals("") ){
+                if(!Etxt_new_idstudent.getText().toString().equals("") && !Etxt_new_username.getText().toString().equals("") && !Etxt_new_password.getText().toString().equals("") ){
 
                     Toast.makeText(SignUpStudent.this,"Please Enter !!", Toast.LENGTH_SHORT).show();
+                    register(Etxt_new_idstudent.getText().toString(),Etxt_new_username.getText().toString(),Etxt_new_password.getText().toString());
 
                 }else
 
-                  register(Etxt_new_idstudent.getText().toString(),Etxt_new_username.getText().toString(),Etxt_new_password.getText().toString());
+                    Toast.makeText(SignUpStudent.this,"Please Enter !!", Toast.LENGTH_SHORT).show();
+
+
             }
         });
 
@@ -107,13 +107,11 @@ public class SignUpStudent extends AppCompatActivity {
 
                             else {
                                 users.child(user.getIdStudent()).setValue(user);
-
                                 Etxt_new_idstudent.setText("");
                                 Etxt_new_password.setText("");
                                 Etxt_new_username.setText("");
 
-                                Toast.makeText(SignUpStudent.this,"User registretion Success !!",Toast.LENGTH_SHORT).show();
-
+                                Toast.makeText(SignUpStudent.this,"User register Success !!",Toast.LENGTH_SHORT).show();
                                 Intent homeactivity = new Intent(SignUpStudent.this, SignInActivity.class);
                                 startActivity(homeactivity);
                                 finish();
@@ -129,20 +127,12 @@ public class SignUpStudent extends AppCompatActivity {
 
                 }else {
                     txt_confirm_password.setText("");
-                    Toast.makeText(SignUpStudent.this,"password not match!s",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpStudent.this,"password not match!",Toast.LENGTH_SHORT).show();
 
                 }
             }
         });
 
-
-
-
-
-
-
     }
-
-
 
 }

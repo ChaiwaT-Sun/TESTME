@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.learn.testme.Common.common;
-import com.example.learn.testme.Model.Question;
 import com.example.learn.testme.Model.QuestionHistory;
 import com.example.learn.testme.ViewHolder.HistoryViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -37,6 +36,8 @@ public class HistoryFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        
         database = FirebaseDatabase.getInstance();
         questionHistory = database.getReference("QuestionHistory");
     }

@@ -17,11 +17,8 @@ import com.example.learn.testme.Interface.ItemClickLIstener;
 import com.example.learn.testme.Model.Subjecte;
 import com.example.learn.testme.ViewHolder.SubjecteViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 
 public class Subject extends Fragment {

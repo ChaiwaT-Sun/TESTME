@@ -10,28 +10,28 @@ import android.view.MenuItem;
 
 public class Home extends AppCompatActivity {
 
-     BottomNavigationView bottomNavigationView;
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        bottomNavigationView = (BottomNavigationView)findViewById(R.id.manu_ber);
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.manu_ber);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = null;
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.action_category:
                         selectedFragment = CategoryFragment.newInstance();
                         break;
                     case R.id.action_history:
-                        selectedFragment =HistoryFragment.newInstance();
+                        selectedFragment = HistoryFragment.newInstance();
                         break;
                 }
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_layout,selectedFragment);
+                transaction.replace(R.id.frame_layout, selectedFragment);
                 transaction.commit();
 
                 return true;
@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
 
     private void setDefaultFragment() {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout,CategoryFragment.newInstance());
+        transaction.replace(R.id.frame_layout, CategoryFragment.newInstance());
         transaction.commit();
     }
 }

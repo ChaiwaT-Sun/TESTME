@@ -3,18 +3,13 @@ package com.example.learn.testme;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.learn.testme.Common.common;
 import com.example.learn.testme.Model.Question;
-import com.example.learn.testme.Model.Subjecte;
-import com.example.learn.testme.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,8 +17,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Collections;
-
-import static com.example.learn.testme.Common.common.categoryId;
 
 public class Start extends AppCompatActivity {
 
