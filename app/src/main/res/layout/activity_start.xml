@@ -11,8 +11,6 @@
     tools:context=".Start">
 
 
-
-
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"
@@ -20,6 +18,7 @@
         android:gravity="center"
 
         android:orientation="vertical">
+
         <TextView
             android:text="Subjecte At"
             android:id="@+id/show_subjecte_at"
@@ -29,6 +28,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
+
         <TextView
             android:text="Subjecte Name"
             android:id="@+id/show_subjecte_deteil"
@@ -60,9 +60,7 @@
             android:layout_height="50dp" />
 
 
-
     </LinearLayout>
-
 
 
 </LinearLayout>

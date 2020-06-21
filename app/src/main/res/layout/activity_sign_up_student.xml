@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,17 +16,14 @@
         android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_above="@id/wrap_signup"
-        />
+        android:layout_above="@id/wrap_signup" />
 
     <RelativeLayout
         android:id="@+id/wrap_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_centerInParent="true"
-        >
-
+        android:layout_centerInParent="true">
 
 
         <LinearLayout
@@ -50,6 +46,7 @@
                 android:hint="ID Student"
                 android:inputType="numberDecimal"
                 android:textColor="#ffffff" />
+
             <EditText
                 android:id="@+id/Etxt_new_username"
                 android:layout_width="300dp"
@@ -64,6 +61,7 @@
                 android:hint="Username"
                 android:inputType="text"
                 android:textColor="#ffffff" />
+
             <EditText
                 android:id="@+id/Etxt_new_password"
                 android:layout_width="300dp"
@@ -81,6 +79,7 @@
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_below="@+id/info_signup"
             android:orientation="vertical"
@@ -99,8 +98,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
                 android:layout_gravity="center"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/btn_back_home"
